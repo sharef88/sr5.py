@@ -23,12 +23,27 @@ def calculate_hits(dice_pool):
 Attacker = namedtuple('Attacker', 'skill attribute ap dv')
 Defender = namedtuple('Defender', 'intuition reaction body armor')
 
-JOHN = Attacker(skill='6', attribute='5', ap='2', dv='6')
-MOOK = Defender()
+JOHN = Attacker(skill=6, attribute=5, ap=2, dv=6)
+MOOK = Defender(intuition=3, reaction=4, body=4, armor=6)
 
-def calculate_combat(combat_range, attacker, defender):
+def calculate_combat(attacker, defender):
     '''
     calculate the results of combat
     '''
-    combat_range, attacker, defender = 0, 0, 0
+    first_hits = {
+        'attacker':calculate_hits(attacker.skill + attacker.attribute),
+        'defender':calculate_hits(defender.intuition + defender.reaction)
+        }
+    first_net = first_hits['attacker'][0] - first_hits['defender'][0]
+
+    if first_net < 1:
+        return 'defender wins'
+    return 'attacker wins'
+
+
+print(
+    Counter(
+        [calculate_combat(attacker=JOHN, defender=MOOK) for _ in range(100)]
+        )
+    )
     
