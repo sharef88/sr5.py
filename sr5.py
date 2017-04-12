@@ -22,12 +22,6 @@ def calculate_hits(dice_pool):
             glitch = 2
     return (hits, glitch)
 
-#Attacker = namedtuple('Attacker', 'skill attribute ap dv')
-#Defender = namedtuple('Defender', 'intuition reaction body armor')
-
-#JOHN = Attacker(skill=6, attribute=5, ap=2, dv=6)
-#MOOK = Defender(intuition=3, reaction=4, body=4, armor=6)
-
 JOHN = character.Character(skill=6, attribute=5, ap=2, dv=6)
 MOOK = character.Character(intuition=3, reaction=4, body=4, armor=6)
 
