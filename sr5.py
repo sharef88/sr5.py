@@ -37,20 +37,17 @@ def calculate_combat(attacker, defender):
     '''
     results = {}
 
-    #PHASE 1
+    #PHASE 1 roll initial attack
     first_hits = {
         'attacker':calculate_hits(attacker.skill + attacker.attribute),
         'defender':calculate_hits(defender.intuition + defender.reaction)
         }
     first_net = first_hits['attacker'][0] - first_hits['defender'][0]
 
-    #results need a glitch notation
-
-
-    #PHASE 2
+    #PHASE 2 determine damage type
     results['damage_type'] = 'P' if first_net + attacker.dv > defender.armor - attacker.ap else 'S'
 
-    #PHASE 3
+    #PHASE 3 body_resist
     body_resist = calculate_hits(defender.body + defender.armor - attacker.ap)
     results['damage'] = first_net + attacker.dv - body_resist[0]
 
