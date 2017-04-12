@@ -22,7 +22,7 @@ def calculate_hits(dice_pool):
             glitch = 2
     return (hits, glitch)
 
-JOHN = character.Character(skill=6, attribute=5, ap=2, dv=6)
+JOHN = character.Character(skill=6, attribute=5, ap=2, dv=2)
 MOOK = character.Character(intuition=3, reaction=4, body=4, armor=6)
 
 def calculate_combat(attacker, defender):
@@ -44,6 +44,7 @@ def calculate_combat(attacker, defender):
     #PHASE 3 body_resist
     body_resist = calculate_hits(defender.body + defender.armor - attacker.ap)
     results['damage'] = first_net + attacker.dv - body_resist[0]
+    results['damage'] = results['damage'] if results['damage'] > 0 else 0
 
     results['glitch'] = {
         'attack':first_hits['attacker'][1],
