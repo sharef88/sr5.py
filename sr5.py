@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 '''Building Shadowrun 5 rules into python'''
 import random
-from collections import Counter, namedtuple
+import json
+from collections import Counter
+import character
 
 def calculate_hits(dice_pool):
     '''
@@ -20,30 +22,49 @@ def calculate_hits(dice_pool):
             glitch = 2
     return (hits, glitch)
 
-Attacker = namedtuple('Attacker', 'skill attribute ap dv')
-Defender = namedtuple('Defender', 'intuition reaction body armor')
+#Attacker = namedtuple('Attacker', 'skill attribute ap dv')
+#Defender = namedtuple('Defender', 'intuition reaction body armor')
 
-JOHN = Attacker(skill=6, attribute=5, ap=2, dv=6)
-MOOK = Defender(intuition=3, reaction=4, body=4, armor=6)
+#JOHN = Attacker(skill=6, attribute=5, ap=2, dv=6)
+#MOOK = Defender(intuition=3, reaction=4, body=4, armor=6)
+
+JOHN = character.Character(skill=6, attribute=5, ap=2, dv=6)
+MOOK = character.Character(intuition=3, reaction=4, body=4, armor=6)
 
 def calculate_combat(attacker, defender):
     '''
     calculate the results of combat
     '''
+    results = {}
+
+    #PHASE 1
     first_hits = {
         'attacker':calculate_hits(attacker.skill + attacker.attribute),
         'defender':calculate_hits(defender.intuition + defender.reaction)
         }
     first_net = first_hits['attacker'][0] - first_hits['defender'][0]
 
+    #results need a glitch notation
+
+
+    #PHASE 2
+    results['damage_type'] = 'P' if first_net + attacker.dv > defender.armor - attacker.ap else 'S'
+
+    #PHASE 3
+    body_resist = calculate_hits(defender.body + defender.armor - attacker.ap)
+    results['damage'] = first_net + attacker.dv - body_resist[0]
+
+    results['glitch'] = {
+        'attack':first_hits['attacker'][1],
+        'defense':first_hits['defender'][1],
+        'resist':body_resist[1]
+        }
+
     if first_net < 1:
-        return 'defender wins'
-    return 'attacker wins'
+        results = results['glitch']
+        return 'defender wins', results
+    return 'attacker wins', results
 
 
-print(
-    Counter(
-        [calculate_combat(attacker=JOHN, defender=MOOK) for _ in range(100)]
-        )
-    )
-    
+for _ in range(10):
+    print(calculate_combat(defender=MOOK, attacker=JOHN))
