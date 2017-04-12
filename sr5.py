@@ -39,12 +39,12 @@ def calculate_combat(attacker, defender):
     first_net = first_hits['attacker'][0] - first_hits['defender'][0]
 
     #PHASE 2 determine damage type
-    results['damage_type'] = 'P' if first_net + attacker.dv > defender.armor - attacker.ap else 'S'
+    damage_type = 'P' if first_net + attacker.dv > defender.armor - attacker.ap else 'S'
 
     #PHASE 3 body_resist
     body_resist = calculate_hits(defender.body + defender.armor - attacker.ap)
-    results['damage'] = first_net + attacker.dv - body_resist[0]
-    results['damage'] = results['damage'] if results['damage'] > 0 else 0
+    results['damage'] = [first_net + attacker.dv - body_resist[0], damage_type]
+    results['damage'][0] = results['damage'][0] if results['damage'][0] > 0 else 0
 
     results['glitch'] = {
         'attack':first_hits['attacker'][1],
@@ -53,10 +53,13 @@ def calculate_combat(attacker, defender):
         }
 
     if first_net < 1:
-        results = results['glitch']
-        return 'defender wins', results
-    return 'attacker wins', results
+        results['damage'][0] = 0
+    results['damage'] = tuple(results['damage'])
+    return results
 
 
-for _ in range(10):
-    print(calculate_combat(defender=MOOK, attacker=JOHN))
+print(
+    Counter(
+        [calculate_combat(defender=MOOK, attacker=JOHN)['damage'] for _ in range(10000)]
+    ).most_common(4)
+)
