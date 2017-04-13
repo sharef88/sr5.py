@@ -1,0 +1,190 @@
+{
+    "": {
+        "attribute": "",
+        "group": ""
+    },
+    "aeronautics mechanic": {
+        "attribute": "logic",
+        "group": "engineering"
+    },
+    "alchemy": {
+        "attribute": "magic",
+        "group": "enchanting"
+    },
+    "artificing": {
+        "attribute": "magic",
+        "group": "enchanting"
+    },
+    "automatics": {
+        "attribute": "agility",
+        "group": "firearms"
+    },
+    "automotive mechanic": {
+        "attribute": "logic",
+        "group": "engineering"
+    },
+    "banishing": {
+        "attribute": "magic",
+        "group": "conjuring"
+    },
+    "binding": {
+        "attribute": "magic",
+        "group": "conjuring"
+    },
+    "blades": {
+        "attribute": "agility",
+        "group": "close combat"
+    },
+    "clubs": {
+        "attribute": "agility",
+        "group": "close combat"
+    },
+    "compiling": {
+        "attribute": "resonance",
+        "group": "tasking"
+    },
+    "computer": {
+        "attribute": "logic",
+        "group": "electronics"
+    },
+    "con": {
+        "attribute": "charisma",
+        "group": "acting"
+    },
+    "counterspelling": {
+        "attribute": "magic",
+        "group": "sorcery"
+    },
+    "cybercombat": {
+        "attribute": "logic",
+        "group": "cracking"
+    },
+    "cybertechnology": {
+        "attribute": "logic",
+        "group": "biotech"
+    },
+    "decompiling": {
+        "attribute": "resonance",
+        "group": "tasking"
+    },
+    "disenchanting": {
+        "attribute": "magic",
+        "group": "enchanting"
+    },
+    "disguise": {
+        "attribute": "intuition",
+        "group": "stealth"
+    },
+    "electronic warfare": {
+        "attribute": "logic",
+        "group": "cracking"
+    },
+    "etiquette": {
+        "attribute": "charisma",
+        "group": "influence"
+    },
+    "first aid": {
+        "attribute": "logic",
+        "group": "biotech"
+    },
+    "gymnastics": {
+        "attribute": "agility",
+        "group": "athletics"
+    },
+    "hacking": {
+        "attribute": "logic",
+        "group": "cracking"
+    },
+    "hardware": {
+        "attribute": "logic",
+        "group": "electronics"
+    },
+    "impersonation": {
+        "attribute": "charisma",
+        "group": "acting"
+    },
+    "industrial mechanic": {
+        "attribute": "logic",
+        "group": "engineering"
+    },
+    "leadership": {
+        "attribute": "charisma",
+        "group": "influence"
+    },
+    "longarms": {
+        "attribute": "agility",
+        "group": "firearms"
+    },
+    "medicine": {
+        "attribute": "logic",
+        "group": "biotech"
+    },
+    "nautical mechanic": {
+        "attribute": "logic",
+        "group": "engineering"
+    },
+    "navigation": {
+        "attribute": "intuition",
+        "group": "outdoors"
+    },
+    "negotiation": {
+        "attribute": "charisma",
+        "group": "influence"
+    },
+    "palming": {
+        "attribute": "agility",
+        "group": "stealth"
+    },
+    "performance": {
+        "attribute": "charisma",
+        "group": "acting"
+    },
+    "pistols": {
+        "attribute": "agility",
+        "group": "firearms"
+    },
+    "registering": {
+        "attribute": "resonance",
+        "group": "tasking"
+    },
+    "ritual spellcasting": {
+        "attribute": "magic",
+        "group": "sorcery"
+    },
+    "running": {
+        "attribute": "strength",
+        "group": "athletics"
+    },
+    "sneaking": {
+        "attribute": "agility",
+        "group": "stealth"
+    },
+    "software": {
+        "attribute": "logic",
+        "group": "electronics"
+    },
+    "spellcasting": {
+        "attribute": "magic",
+        "group": "sorcery"
+    },
+    "summoning": {
+        "attribute": "magic",
+        "group": "conjuring"
+    },
+    "survival": {
+        "attribute": "willpower",
+        "group": "outdoors"
+    },
+    "swimming": {
+        "attribute": "strength",
+        "group": "athletics"
+    },
+    "tracking": {
+        "attribute": "intuition",
+        "group": "outdoors"
+    },
+    "unarmed": {
+        "attribute": "agility",
+        "group": "close combat"
+    }
+}
