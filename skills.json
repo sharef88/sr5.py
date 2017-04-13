@@ -1,190 +1,658 @@
 {
-    "": {
-        "attribute": "",
-        "group": ""
-    },
     "aeronautics mechanic": {
         "attribute": "logic",
-        "group": "engineering"
+        "default": false,
+        "group": "engineering",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "alchemy": {
         "attribute": "magic",
-        "group": "enchanting"
+        "default": false,
+        "group": "enchanting",
+        "type": [
+            "magic",
+            "active"
+        ]
+    },
+    "animal handling": {
+        "attribute": "charisma",
+        "default": true,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "arcana": {
+        "attribute": "logic",
+        "default": false,
+        "group": "no",
+        "type": [
+            "magic",
+            "active"
+        ]
+    },
+    "archery": {
+        "attribute": "agility",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "combat"
+        ]
+    },
+    "armorer": {
+        "attribute": "logic",
+        "default": true,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "artificing": {
         "attribute": "magic",
-        "group": "enchanting"
+        "default": false,
+        "group": "enchanting",
+        "type": [
+            "magic",
+            "active"
+        ]
+    },
+    "artisan": {
+        "attribute": "intuition",
+        "default": false,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "assensing": {
+        "attribute": "intuition",
+        "default": false,
+        "group": "no",
+        "type": [
+            "magic",
+            "active"
+        ]
+    },
+    "astral combat": {
+        "attribute": "willpower",
+        "default": false,
+        "group": "no",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "automatics": {
         "attribute": "agility",
-        "group": "firearms"
+        "default": true,
+        "group": "firearms",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "automotive mechanic": {
         "attribute": "logic",
-        "group": "engineering"
+        "default": false,
+        "group": "engineering",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "banishing": {
         "attribute": "magic",
-        "group": "conjuring"
+        "default": false,
+        "group": "conjuring",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "binding": {
         "attribute": "magic",
-        "group": "conjuring"
+        "default": false,
+        "group": "conjuring",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "blades": {
         "attribute": "agility",
-        "group": "close combat"
+        "default": true,
+        "group": "close combat",
+        "type": [
+            "active",
+            "combat"
+        ]
+    },
+    "chemistry": {
+        "attribute": "logic",
+        "default": false,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "clubs": {
         "attribute": "agility",
-        "group": "close combat"
+        "default": true,
+        "group": "close combat",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "compiling": {
         "attribute": "resonance",
-        "group": "tasking"
+        "default": false,
+        "group": "tasking",
+        "type": [
+            "resonance",
+            "active"
+        ]
     },
     "computer": {
         "attribute": "logic",
-        "group": "electronics"
+        "default": true,
+        "group": "electronics",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "con": {
         "attribute": "charisma",
-        "group": "acting"
+        "default": true,
+        "group": "acting",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "counterspelling": {
         "attribute": "magic",
-        "group": "sorcery"
+        "default": false,
+        "group": "sorcery",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "cybercombat": {
         "attribute": "logic",
-        "group": "cracking"
+        "default": true,
+        "group": "cracking",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "cybertechnology": {
         "attribute": "logic",
-        "group": "biotech"
+        "default": false,
+        "group": "biotech",
+        "type": [
+            "technical"
+        ]
     },
     "decompiling": {
         "attribute": "resonance",
-        "group": "tasking"
+        "default": false,
+        "group": "tasking",
+        "type": [
+            "resonance",
+            "active"
+        ]
+    },
+    "demolitions": {
+        "attribute": "logic",
+        "default": true,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "disenchanting": {
         "attribute": "magic",
-        "group": "enchanting"
+        "default": false,
+        "group": "enchanting",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "disguise": {
         "attribute": "intuition",
-        "group": "stealth"
+        "default": true,
+        "group": "stealth",
+        "type": [
+            "active",
+            "physical"
+        ]
+    },
+    "diving": {
+        "attribute": "body",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "electronic warfare": {
         "attribute": "logic",
-        "group": "cracking"
+        "default": false,
+        "group": "cracking",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "escape artist": {
+        "attribute": "agility",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "etiquette": {
         "attribute": "charisma",
-        "group": "influence"
+        "default": true,
+        "group": "influence",
+        "type": [
+            "social",
+            "active"
+        ]
+    },
+    "exotic ranged weapon": {
+        "attribute": "agility",
+        "default": false,
+        "group": "no",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "first aid": {
         "attribute": "logic",
-        "group": "biotech"
+        "default": true,
+        "group": "biotech",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "forgery": {
+        "attribute": "logic",
+        "default": true,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "free fall": {
+        "attribute": "agility",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "physical"
+        ]
+    },
+    "gunnery": {
+        "attribute": "agility",
+        "default": true,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
     },
     "gymnastics": {
         "attribute": "agility",
-        "group": "athletics"
+        "default": true,
+        "group": "athletics",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "hacking": {
         "attribute": "logic",
-        "group": "cracking"
+        "default": true,
+        "group": "cracking",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "hardware": {
         "attribute": "logic",
-        "group": "electronics"
+        "default": false,
+        "group": "electronics",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "heavy weapons": {
+        "attribute": "agility",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "impersonation": {
         "attribute": "charisma",
-        "group": "acting"
+        "default": true,
+        "group": "acting",
+        "type": [
+            "social",
+            "active"
+        ]
     },
     "industrial mechanic": {
         "attribute": "logic",
-        "group": "engineering"
+        "default": false,
+        "group": "engineering",
+        "type": [
+            "technical",
+            "active"
+        ]
+    },
+    "instruction": {
+        "attribute": "charisma",
+        "default": true,
+        "group": "no",
+        "type": [
+            "social",
+            "active"
+        ]
+    },
+    "intimidation": {
+        "attribute": "charisma",
+        "default": true,
+        "group": "no",
+        "type": [
+            "social",
+            "active"
+        ]
     },
     "leadership": {
         "attribute": "charisma",
-        "group": "influence"
+        "default": true,
+        "group": "influence",
+        "type": [
+            "social",
+            "active"
+        ]
+    },
+    "locksmith": {
+        "attribute": "agility",
+        "default": false,
+        "group": "no",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "longarms": {
         "attribute": "agility",
-        "group": "firearms"
+        "default": true,
+        "group": "firearms",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "medicine": {
         "attribute": "logic",
-        "group": "biotech"
+        "default": false,
+        "group": "biotech",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "nautical mechanic": {
         "attribute": "logic",
-        "group": "engineering"
+        "default": false,
+        "group": "engineering",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "navigation": {
         "attribute": "intuition",
-        "group": "outdoors"
+        "default": true,
+        "group": "outdoors",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "negotiation": {
         "attribute": "charisma",
-        "group": "influence"
+        "default": true,
+        "group": "influence",
+        "type": [
+            "social",
+            "active"
+        ]
     },
     "palming": {
         "attribute": "agility",
-        "group": "stealth"
+        "default": false,
+        "group": "stealth",
+        "type": [
+            "active",
+            "physical"
+        ]
+    },
+    "perception": {
+        "attribute": "intuition",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "performance": {
         "attribute": "charisma",
-        "group": "acting"
+        "default": true,
+        "group": "acting",
+        "type": [
+            "social",
+            "active"
+        ]
+    },
+    "pilot aerospace": {
+        "attribute": "reaction",
+        "default": false,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
+    },
+    "pilot aircraft": {
+        "attribute": "reaction",
+        "default": false,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
+    },
+    "pilot exotic vehicle": {
+        "attribute": "reaction",
+        "default": false,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
+    },
+    "pilot ground craft": {
+        "attribute": "reaction",
+        "default": true,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
+    },
+    "pilot walker": {
+        "attribute": "reaction",
+        "default": false,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
+    },
+    "pilot watercraft": {
+        "attribute": "reaction",
+        "default": true,
+        "group": "no",
+        "type": [
+            "pilot",
+            "active"
+        ]
     },
     "pistols": {
         "attribute": "agility",
-        "group": "firearms"
+        "default": true,
+        "group": "firearms",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "registering": {
         "attribute": "resonance",
-        "group": "tasking"
+        "default": false,
+        "group": "tasking",
+        "type": [
+            "resonance",
+            "active"
+        ]
     },
     "ritual spellcasting": {
         "attribute": "magic",
-        "group": "sorcery"
+        "default": false,
+        "group": "sorcery",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "running": {
         "attribute": "strength",
-        "group": "athletics"
+        "default": true,
+        "group": "athletics",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "sneaking": {
         "attribute": "agility",
-        "group": "stealth"
+        "default": true,
+        "group": "stealth",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "software": {
         "attribute": "logic",
-        "group": "electronics"
+        "default": false,
+        "group": "electronics",
+        "type": [
+            "technical",
+            "active"
+        ]
     },
     "spellcasting": {
         "attribute": "magic",
-        "group": "sorcery"
+        "default": false,
+        "group": "sorcery",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "summoning": {
         "attribute": "magic",
-        "group": "conjuring"
+        "default": false,
+        "group": "conjuring",
+        "type": [
+            "magic",
+            "active"
+        ]
     },
     "survival": {
         "attribute": "willpower",
-        "group": "outdoors"
+        "default": true,
+        "group": "outdoors",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "swimming": {
         "attribute": "strength",
-        "group": "athletics"
+        "default": true,
+        "group": "athletics",
+        "type": [
+            "active",
+            "physical"
+        ]
+    },
+    "throwing weapons": {
+        "attribute": "agility",
+        "default": true,
+        "group": "no",
+        "type": [
+            "active",
+            "combat"
+        ]
     },
     "tracking": {
         "attribute": "intuition",
-        "group": "outdoors"
+        "default": true,
+        "group": "outdoors",
+        "type": [
+            "active",
+            "physical"
+        ]
     },
     "unarmed": {
         "attribute": "agility",
-        "group": "close combat"
+        "default": true,
+        "group": "close combat",
+        "type": [
+            "active",
+            "combat"
+        ]
     }
 }
