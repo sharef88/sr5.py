@@ -202,7 +202,8 @@
         "default": false,
         "group": "biotech",
         "type": [
-            "technical"
+            "technical",
+            "active"
         ]
     },
     "decompiling": {
