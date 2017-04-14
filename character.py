@@ -5,7 +5,10 @@ Module for the definition of an SR5 character
 import json
 
 
-class Character(dict):
+class Character(object):
+    '''
+    Character Definition for SR5
+    '''
     attributes_ref = ('body', 'agility', 'reaction', 'strength',
                       'willpower', 'logic', 'intuition', 'charisma',
                       'essence')
