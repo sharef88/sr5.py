@@ -50,7 +50,7 @@ class Character(object):
                     else:
                         self.data['active_skills'][key] = kwargs[key]
                 else:
-                    raise TypeError('what is %s and what is ' % key)
+                    raise TypeError('what is %s and what is it doing here?' % key)
             else:
                 raise TypeError('attribute/skill "%s" is not in the valid list' % key)
 
