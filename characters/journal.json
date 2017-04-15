@@ -1,0 +1,20 @@
+[
+    {
+        "target_name":"value",
+        "type":"value",
+        "sequence":0,
+        "time":0,
+        "value":{
+            "relevant":"data"
+        }
+    },
+    {
+        "target_name":"value",
+        "type":"value",
+        "sequence":0,
+        "time":0,
+        "value":{
+            "relevant":"data"
+        }
+    }
+]
