@@ -1,20 +1,23 @@
 [
     {
-        "target_name":"value",
-        "type":"value",
+        "target_name":"Drake",
+        "type":"quality",
+        "uuid":"value",
         "sequence":0,
         "time":0,
         "value":{
-            "relevant":"data"
+            "name":"bein a phule",
+            "value":"other stuff"
         }
     },
     {
-        "target_name":"value",
-        "type":"value",
-        "sequence":0,
+        "target_name":"Drake",
+        "type":"quality",
+        "uuid":"value",
+        "sequence":1,
         "time":0,
         "value":{
-            "relevant":"data"
+            "name":"bein a vampire"
         }
     }
 ]
